@@ -1,0 +1,7 @@
+# .gitignore
+
+# configurations
+.vscode
+
+# readme TEST...
+README_TEST.md
