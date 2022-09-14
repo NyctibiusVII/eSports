@@ -1,0 +1,77 @@
+/* Mobile */
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+
+    .logo {
+        width: 11.5rem;
+
+        margin: 7.5rem 0 0.75rem;
+    }
+    .introduction {
+        width: 100%;
+
+        h1 > span {
+            background-image: var(--gradient);
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: var(--white);
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 480px) { .container { padding: 0 3rem; } }
+
+/* Tablet */
+@media screen and (min-width: 580px) {
+    .container {
+        gap: 2rem;
+
+        .logo {
+            width: 14rem;
+
+            margin: 5.5rem 0 1.5rem;
+        }
+        .introduction {
+            width: auto;
+
+            h1 { font-size: 2.5rem; }
+            h2 { display: none; }
+        }
+    }
+}
+@media screen and (min-width: 780px) { .container { padding: 0 4rem; .introduction { h1 { font-size: 3rem; } } } }
+@media screen and (min-width: 980px) { .container { padding: 0 6rem; .introduction { h1 { font-size: 3.5rem; } } } }
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 0 9.188rem;
+
+        gap: 4rem;
+
+        .logo {
+            width: 17.814rem;
+
+            margin: 4rem 0 1rem;
+        }
+        .introduction {
+            h1 {
+                font-size: 4rem;
+                line-height: 4.813rem;
+                letter-spacing: -0.089rem;
+            }
+        }
+    }
+}
