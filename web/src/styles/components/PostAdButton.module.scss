@@ -1,0 +1,43 @@
+/* Mobile */
+.container {
+    height: min-content;
+
+    background-color: var(--post-ad-btn-bg);
+    font-weight: 400;
+
+    padding: 0.75rem 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+
+    transition: filter 0.3s ease-in-out;
+    -webkit-transition: filter 0.3s ease-in-out;
+    -moz-transition: filter 0.3s ease-in-out;
+    -ms-transition: filter 0.3s ease-in-out;
+    -o-transition: filter 0.3s ease-in-out;
+
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+
+    &:hover {
+        filter: opacity(0.8);
+        -webkit-filter: opacity(0.8);
+    }
+}
+
+
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    .container {
+        font-size: 1rem;
+        font-weight: 500;
+
+        gap: 0.75rem;
+    }
+}
