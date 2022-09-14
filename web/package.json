@@ -5,13 +5,44 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NyctibiusVII/eSports.git"
+  },
+  "keywords": [
+    "e-sports",
+    "rocketseat",
+    "ignite",
+    "nlw",
+    "web",
+    "mobile",
+    "server",
+    "api-rest",
+    "spa",
+    "gamer",
+    "game",
+    "duo",
+    "match",
+    "twitch",
+    "api"
+  ],
+  "author": "NyctibiusVII",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NyctibiusVII/eSports/issues"
+  },
+  "homepage": "https://github.com/NyctibiusVII/eSports#readme",
   "dependencies": {
     "next": "12.3.0",
+    "next-themes": "^0.2.1",
+    "phosphor-react": "^1.4.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.54.9"
   },
   "devDependencies": {
     "@types/node": "18.7.16",
@@ -19,6 +50,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
+    "next-sitemap": "^3.1.22",
     "typescript": "4.8.3"
   }
 }

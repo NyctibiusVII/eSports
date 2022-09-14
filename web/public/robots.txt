@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /__tests__
+
+# Host
+Host: https://esports-nyctibiusvii.vercel.app
+
+# Sitemaps
+Sitemap: https://esports-nyctibiusvii.vercel.app/sitemap.xml
