@@ -102,6 +102,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 <details>
     <summary>WEB___</summary>
     <a href='https://reactjs.org'>React</a><br>
+    <a href='https://sass-lang.com'>Sass</a><br>
     <a href='https://www.typescriptlang.org'>Typescript</a>
 </details>
 <details>
@@ -120,12 +121,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Layout 🚧
 ### Desktop Screenshot
 <div style="display: flex; flex-direction: 'column'; align-items: 'center';">
-    <img width="700px" src="./.github/desktop.png">
+    <img width="580px" src="./.github/desktop.png">
 </div>
 
 ### Mobile Screenshot
 <div style="display: flex; flex-direction: 'row';">
-    <img width=700px" src="./.github/mobile.png">
+    <img width=180px" src="./.github/mobile.png">
 </div>
     <!-- IMGS
       ------------------------------
@@ -146,8 +147,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   ------- WEB -------
   "dependencies": {
     "next": "12.3.0",
+    "next-themes": "^0.2.1",
+    "phosphor-react": "^1.4.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.54.9"
   },
   "devDependencies": {
     "@types/node": "18.7.16",
@@ -155,6 +159,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
     "@types/react-dom": "18.0.6",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
+    "next-sitemap": "^3.1.22",
     "typescript": "4.8.3"
   }
 
@@ -170,11 +175,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
   ------- MOBILE -------
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.2.2",
     "expo": "~46.0.9",
+    "expo-font": "^10.2.0",
+    "expo-linear-gradient": "^11.4.0",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.5",
+    "react-native-safe-area-context": "^4.3.3",
     "react-native-web": "~0.18.7"
   },
   "devDependencies": {
@@ -182,7 +191,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
     "@types/react": "~18.0.14",
     "@types/react-native": "~0.69.1",
     "typescript": "~4.3.5"
-  },
+  }
 ```
 > Ex: `$ npm install _____` ou `$ yarn add _____` para instalar as dependências
 
@@ -239,7 +248,7 @@ Para ajudar no projeto confira a página de [contribuição](./CONTRIBUTING) par
 | Dias  | Hashtags           |
 |-------|--------------------|
 | Dia 1 | #LevelUp           |
-| Dia 2 | #~                 |
+| Dia 2 | #Journey           |
 | Dia 3 | #~                 |
 | Dia 4 | #~                 |
 | Dia 5 | #~                 |
