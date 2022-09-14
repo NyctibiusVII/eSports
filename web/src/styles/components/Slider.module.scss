@@ -1,0 +1,75 @@
+/* Mobile */
+.container {
+    max-width: 62.5rem;
+    min-width: 11.25rem;
+    width: 100%;
+    height: 240px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    gap: 1.5rem;
+
+    overflow-x: overlay;
+    overflow-y: hidden;
+
+    a { display: inline-grid; }
+
+    .card {
+        position: relative;
+
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+
+        overflow: hidden;
+
+        .gameLogo, .info {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .info {
+            background-image: var(--card-info-bg);
+
+            padding: 0.5rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            transition: filter 0.3s ease-in-out;
+            -webkit-transition: filter 0.3s ease-in-out;
+            -moz-transition: filter 0.3s ease-in-out;
+            -ms-transition: filter 0.3s ease-in-out;
+            -o-transition: filter 0.3s ease-in-out;
+
+            filter: opacity(0);
+            -webkit-filter: opacity(0);
+
+            span {
+                color: var(--announcements-fg);
+                font-weight: 400;
+            }
+        }
+
+        &:hover .info {
+            filter: opacity(1);
+            -webkit-filter: opacity(1);
+        }
+    }
+}
+
+
+
+/* Tablet */
+@media screen and (min-width: 580px) { .container { align-self: center; } }
+
+/* Desktop */
+@media screen and (min-width: 1440px) { .container { width: initial; } }
