@@ -56,13 +56,13 @@ DESKTOP:
     ✖ - SEO:
         ✖ - Texto para <noscript />
         ✖ - Shortcut icon
-        ✖ - Meta tags:
-            ✖ - Facebook (og:~)
-            ✖ - Twitter (twitter:~)
+        ✔ - Meta tags:
+            ✔ - Facebook (og:~)
+            ✔ - Twitter (twitter:~)
     ✖ - Melhorar o estilo:
-        ✖ - Mobile First
-        ✖ - Responsividade
-        ✖ - Design
+        ✔ - Mobile First
+        ✔ - Responsividade
+        ✔ - Design
         ✖ - Trocar o tema da aplicação:
             ✖ - Light
             ✔ - Dark
@@ -85,15 +85,13 @@ MOBILE:
             ✔ - Dark
             ✖ - Imagens adaptadas para o 'light e dark'
         ✖ - Animações (framer-motion)
-        ✖ - Cores:
-            ✖ - Adaptadas para daltônicos
 
 NODE:
     ✖ - NO AR (Online / Heroku)
-    ✖ - ORM (Prisma)
+    ✔ - ORM (Prisma)
     ✖ - Testes (Jest)
-    ✖ - Banco de dados:
-        ✖ - SQLite
+    ✔ - Banco de dados:
+        ✔ - SQLite
 ```
 </details>
 
@@ -108,6 +106,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 <details>
     <summary>NODE___</summary>
     <a href='https://nodejs.org/pt-br'>Node</a><br>
+    <a href='https://www.prisma.io'>Prisma</a><br>
     <a href='https://www.typescriptlang.org'>Typescript</a>
 </details>
 <details>
@@ -165,10 +164,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
   ------- NODE -------
   "dependencies": {
+    "@prisma/client": "^4.3.1",
+    "cors": "^2.8.5",
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
+    "prisma": "^4.3.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.8.3"
   }
@@ -249,7 +252,7 @@ Para ajudar no projeto confira a página de [contribuição](./CONTRIBUTING) par
 |-------|--------------------|
 | Dia 1 | #LevelUp           |
 | Dia 2 | #Journey           |
-| Dia 3 | #~                 |
+| Dia 3 | #UntilTheEnd       |
 | Dia 4 | #~                 |
 | Dia 5 | #~                 |
 
