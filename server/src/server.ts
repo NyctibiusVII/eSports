@@ -14,7 +14,11 @@ const app = express()
 
 app.use(express.json())
 app.use('/', express.static('public'))
-app.use(cors())
+app.use(cors({ origin: [
+    'https://e-sports-nyctibiusvii.vercel.app',
+    'https://e-sports-one.vercel.app',
+    'https://e-sports-git-main-nyctibiusvii.vercel.app'
+] }))
 
 const prisma = new PrismaClient({ log: ['query'] })
 
@@ -71,7 +75,7 @@ app.get('/games/:id/ads', async (request, response) => {
         orderBy: { createdAt: 'desc' }
     })
 
-    return response.json(ads.map((ad: { weekDays: string; hourStart: number; hourEnd: number }) => {
+    return response.json(ads.map((ad: { weekDays: string, hourStart: number, hourEnd: number }) => {
         return {
             ...ad,
             weekDays: ad.weekDays.split(','),
