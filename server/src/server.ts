@@ -93,3 +93,5 @@ app.get('/ads/:id/discord', async (request, response) => {
 })
 
 app.listen(3333)
+
+module.exports = app
