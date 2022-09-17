@@ -14,11 +14,7 @@ const app = express()
 
 app.use(express.json())
 app.use('/', express.static('public'))
-app.use(cors({ origin: [
-    'https://e-sports-nyctibiusvii.vercel.app',
-    'https://e-sports-one.vercel.app',
-    'https://e-sports-git-main-nyctibiusvii.vercel.app'
-] }))
+app.use(cors())
 
 const prisma = new PrismaClient({ log: ['query'] })
 
