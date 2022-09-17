@@ -145,6 +145,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ```json
   ------- WEB -------
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.0",
+    "axios": "^0.27.2",
     "next": "12.3.0",
     "next-themes": "^0.2.1",
     "phosphor-react": "^1.4.1",
@@ -179,14 +181,19 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   ------- MOBILE -------
   "dependencies": {
     "@expo-google-fonts/inter": "^0.2.2",
+    "@react-navigation/native": "^6.0.12",
+    "@react-navigation/native-stack": "^6.8.0",
     "expo": "~46.0.9",
     "expo-font": "^10.2.0",
     "expo-linear-gradient": "^11.4.0",
     "expo-status-bar": "~1.4.0",
+    "phosphor-react-native": "1.1.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.5",
-    "react-native-safe-area-context": "^4.3.3",
+    "react-native-safe-area-context": "4.3.1",
+    "react-native-screens": "~3.15.0",
+    "react-native-svg": "12.3.0",
     "react-native-web": "~0.18.7"
   },
   "devDependencies": {
@@ -253,7 +260,7 @@ Para ajudar no projeto confira a página de [contribuição](./CONTRIBUTING) par
 | Dia 1 | #LevelUp           |
 | Dia 2 | #Journey           |
 | Dia 3 | #UntilTheEnd       |
-| Dia 4 | #~                 |
+| Dia 4 | #ProPlayer         |
 | Dia 5 | #~                 |
 
 ## Licença ⚖️
