@@ -1,0 +1,26 @@
+/* Mobile */
+.container {
+    width: 11.5rem;
+
+    margin: 7.5rem 0 0.75rem;
+}
+
+
+
+/* Tablet */
+@media screen and (min-width: 580px) {
+    .container {
+        width: 14rem;
+
+        margin: 5.5rem 0 1.5rem;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 17.814rem;
+
+        margin: 4rem 0 1rem;
+    }
+}

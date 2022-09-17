@@ -264,8 +264,12 @@
 
     --luminosity-70p    : rgb(255 255 255 / 70%);
     --luminosity-50p    : rgb(255 255 255 / 50%);
+    --luminosity-20p    : rgb(255 255 255 / 20%);
     --luminosity-10p    : rgb(255 255 255 / 10%);
     --luminosity-5p     : rgb(255 255 255 / 5%);
+    --shadow-60p        : rgb(0 0 0 / 60%);
+    --shadow-40p        : rgb(0 0 0 / 40%);
+    --shadow-20p        : rgb(0 0 0 / 20%);
     --shadow-5p         : rgb(0 0 0 / 5%);
     --shadow-1p         : rgb(0 0 0 / 1%);
 }
@@ -294,9 +298,20 @@
     --announcements-fg         : var(--zinc-300);
     /* PostAd ------ */
     --post-ad-bg               : #2A2634;
-    --post-ad-btn-bg           : var(--violet-500);
     --post-ad-txt-desc         : var(--zinc-400);
     --post-ad-custom-border-bg : var(--gradient);
+    --post-ad-dg-overlay       : var(--shadow-60p);
+    --post-ad-dg-content       : #2A2634;
+    --post-ad-dg-content-bx    : var(--shadow-20p);
+    --post-ad-dg-title         : var(--white);
+    /* Form ------ */
+    --Form-input-bg            : var(--shadow-20p);
+    --Form-input-ph            : var(--luminosity-20p);
+    /* Button ------ */
+    --button-bg-primary        : var(--violet-500);
+    --button-bg-secondary      : var(--shadow-40p);
+    --button-bg-active         : var(--violet-500);
+    --button-bg-inactive       : var(--shadow-20p);
 }
 
 

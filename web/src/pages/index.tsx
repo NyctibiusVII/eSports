@@ -1,33 +1,38 @@
 /* Import --------------------------------------------------------------- */
 
 import type { NextPage } from 'next'
+import type { Game }     from '../interfaces/types'
 
-import { Slider } from '../components/Slider'
-import { PostAd } from '../components/PostAd'
+import {
+    useEffect,
+    useState
+} from 'react'
 
-import Logo from '../../public/assets/logo-esports.svg'
+import { api } from '../services/api'
 
-import Image from 'next/future/image'
-import Head  from 'next/head'
+import { Logo }    from '../components/Logo'
+import { Heading } from '../components/Heading'
+import { Slider }  from '../components/Slider'
+import { PostAd }  from '../components/PostAd'
+
+import Head from 'next/head'
 
 import styles from '../styles/pages/Home.module.scss'
 
 /* ---------------------------------------------------------------------- */
 
 const Home: NextPage = () => {
+    const [games, setGames] = useState<Game[]>([])
+
+    useEffect(() => { api.get('/games').then(res => setGames(res.data)) }, [])
+
     return (
         <>
             <Head><title>eSport</title></Head>
             <main className={styles.container}>
-                <Image src={Logo} className={styles.logo} loading='eager' alt='' />
-
-                <div className={styles.introduction}>
-                    <h1>Your <span>duo</span> is here.</h1>
-                    <h2>Select the game you want to play...</h2>
-                </div>
-
-                <Slider />
-
+                <Logo />
+                <Heading />
+                <Slider itens={games} />
                 <PostAd />
             </main>
         </>

@@ -1,0 +1,36 @@
+/* Mobile */
+.container {
+    width: 100%;
+
+    h1 > span {
+        background-image: var(--gradient);
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: var(--white);
+    }
+}
+
+
+
+/* Tablet */
+@media screen and (min-width: 580px) {
+    .container {
+        width: auto;
+
+        h1 { font-size: 2.5rem; }
+        h2 { display: none; }
+    }
+}
+@media screen and (min-width: 780px) { .container h1 { font-size: 3rem; } }
+@media screen and (min-width: 980px) { .container h1 { font-size: 3.5rem; } }
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    .container h1 {
+        font-size: 4rem;
+        line-height: 4.813rem;
+        letter-spacing: -0.089rem;
+    }
+}

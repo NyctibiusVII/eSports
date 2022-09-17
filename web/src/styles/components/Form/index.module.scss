@@ -1,0 +1,43 @@
+/* Mobile */
+.container {
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    .split, .field, .week { gap: 0.3rem; }
+    .split {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .field {
+        display: flex;
+        flex-direction: column;
+    }
+    .week {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .fieldCheckbox {
+        font-size: 0.875rem;
+
+        margin-top: 0.8rem;
+
+        display: flex;
+        gap: 0.5rem;
+    }
+    footer {
+        margin-top: 1.5rem;
+
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+}
+
+
+
+/* Tablet */
+@media screen and (min-width: 580px) { .container .split { flex-direction: row; } }
