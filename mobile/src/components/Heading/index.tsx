@@ -7,7 +7,7 @@ import { styles } from './styles'
 /* ---------------------------------------------------------------------- */
 
 interface Props extends ViewProps {
-    title: string
+    title:    string
     subtitle: string
 }
 
