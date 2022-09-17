@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl:              'https://esports-nyctibiusvii.vercel.app',
+    siteUrl:              'https://e-sports-nyctibiusvii.vercel.app',
     changefreq:           'daily',
     priority:             0.7,
     sitemapSize:          5000,

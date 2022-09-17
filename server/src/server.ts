@@ -1,9 +1,10 @@
 /* Import --------------------------------------------------------------- */
 
 import express from 'express'
-import cors from 'cors'
+import cors    from 'cors'
 
 import { PrismaClient } from '@prisma/client'
+
 import { convertHourStringToMinutes } from './utils/convert-hour-string-to-minutes'
 import { convertMinutesToHourString } from './utils/convert-minutes-to-hour-string'
 
@@ -12,9 +13,16 @@ import { convertMinutesToHourString } from './utils/convert-minutes-to-hour-stri
 const app = express()
 
 app.use(express.json())
-app.use(cors())//{ origin: 'https://esports-nyctibiusvii.vercel.app' }
+app.use('/', express.static('public'))
+app.use(cors({ origin: [
+    'https://e-sports-nyctibiusvii.vercel.app',
+    'https://e-sports-one.vercel.app',
+    'https://e-sports-git-main-nyctibiusvii.vercel.app'
+] }))
 
 const prisma = new PrismaClient({ log: ['query'] })
+
+app.get('/', async (request, response) => response.sendFile('index.html'))
 
 app.get('/games', async (request, response) => {
     const games = await prisma.game.findMany({
