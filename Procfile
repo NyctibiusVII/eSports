@@ -1,1 +1,1 @@
-web: cd server; yarn start
+web: node server/dist/server.js
